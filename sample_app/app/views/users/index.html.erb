@@ -1,0 +1,7 @@
+<% User.all.each_with_index do |user, ind| %>
+
+<h1>
+    <%= gravatar_for user%>
+    <%= "#{ind+1}. #{user.name} <#{user.email}>" %>
+</h1>
+<% end %>
